@@ -1,5 +1,3 @@
 #!/usr/bin/python3
 def search_replace(my_list, search, replace):
-    def find_search(element):
-        return element if element != search else replace
-    return liest(map(find_search, my_list))
+	return (list(map(lambda new: new if new != search else replace, my_list)))
